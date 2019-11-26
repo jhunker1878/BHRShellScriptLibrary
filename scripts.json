@@ -2,12 +2,20 @@
     {
         "children": [
             {
+                "description": "Prints out current OS Version and Info",
+                "name": "Show OS Version",
+                "script": "cat /etc/os-release",
+                "showResult": true,
+                "timeout": 0,
+                "uid": "1CE0BC40-C03F-40FF-8EF5-F067B78695D1"
+            },
+            {
                 "description": "Prints out current CPU utilization",
                 "name": "Show CPU",
                 "script": "top -b -n2 | grep \"Cpu(s)\" | awk '{print $8 \",\"}';",
                 "showResult": true,
                 "timeout": 0,
-                "uid": "1CE0BC40-C03F-40FF-8EF5-F067B78695D1"
+                "uid": "1CE0BC40-C03F-40FF-8EF5-F067B78695D2"
             },
             {
                 "description": "Prints out current free Memory",
